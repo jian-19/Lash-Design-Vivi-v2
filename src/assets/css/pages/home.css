@@ -1,0 +1,84 @@
+/* --- ARQUIVO: home.css --- */
+
+/* --- SEÇÃO INICIAL --- */
+#inicio .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+}
+
+#inicio h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.designer-name {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* --- SEÇÃO SOBRE MIM --- */
+.profile-pic {
+    max-width: 300px;
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* --- SEÇÃO DE SERVIÇOS --- */
+.service-card {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.service-img {
+    width: 100%;
+    height: 450px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.service-card h3 {
+    color: var(--heading-color);
+    font-size: 1.7rem;
+    margin: 20px 0 10px 0;
+}
+
+.service-desc {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+.maintenance, .category {
+    font-size: 0.85rem;
+}
+
+.maintenance {
+    margin-bottom: 10px;
+}
+
+/* Ajuste de grid para a seção de serviços em telas maiores */
+@media (min-width: 768px) {
+    #servicos-cilios, #servicos-sobrancelhas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

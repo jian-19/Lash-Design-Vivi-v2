@@ -1,0 +1,63 @@
+/* --- ARQUIVO: main.css --- */
+
+/* --- VARIÁVEIS DE COR E FONTE --- */
+:root {
+    --bg-color: #ffbfcb;
+    --card-bg-color: #ffdce4;
+    --text-color: #501f2c;
+    --primary-color: #a86f7b;
+    --heading-color: #7c4754;
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+/* --- ESTILOS GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px; /* Espaço para a navbar fixa */
+}
+
+.container {
+    max-width: 720px;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+/* Título genérico para seções */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
